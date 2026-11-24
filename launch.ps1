@@ -35,7 +35,7 @@ try {
 	exit
 }
 
-Get-ChildItem -Path ".\OSRS" -File | ForEach-Object {
+Get-ChildItem -Path ".\OSRS" -Filter *.properties -File | ForEach-Object {
     $config = Get-Content $_.FullName -Raw | ConvertFrom-StringData
 
     $env:JX_CHARACTER_ID = $config.JX_CHARACTER_ID
@@ -53,7 +53,7 @@ Get-ChildItem -Path ".\OSRS" -File | ForEach-Object {
 	}
 }
 
-Get-ChildItem -Path ".\RS3" -File | ForEach-Object {
+Get-ChildItem -Path ".\RS3" -Filter *.properties -File | ForEach-Object {
     $config = Get-Content $_.FullName -Raw | ConvertFrom-StringData
 
     $env:JX_CHARACTER_ID = $config.JX_CHARACTER_ID
