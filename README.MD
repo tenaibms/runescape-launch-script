@@ -11,7 +11,9 @@ JX_CHARACTER_ID=blahblah
 JX_SESSION_ID=mysessionid
 JX_REFRESH_TOKEN=
 JX_DISPLAY_NAME=foobar
-JX_ACCESS_TOKEN=```
+JX_ACCESS_TOKEN=
+```
 you would paste `mysessionid` into `sessionid.txt`
 
 Happy Scaping! (´・ω・｀)∫
+## Demo Video
