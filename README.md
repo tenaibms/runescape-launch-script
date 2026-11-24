@@ -8,17 +8,6 @@ Launch RuneLite on each account you want to add with `--insecure-write-credentia
 
 If you have RuneLite or RS3 installed to a non-standard directory you will need to change that in the script. It will be very obvious where.
 
-Finally, from any credential file, copy the session ID and paste it into a new file called `sessionid.txt`. For example, if a credential file has the following structure:
-```#Do not share this file with anyone
-#Today's date
-JX_CHARACTER_ID=blahblah
-JX_SESSION_ID=mysessionid
-JX_REFRESH_TOKEN=
-JX_DISPLAY_NAME=foobar
-JX_ACCESS_TOKEN=
-```
-you would paste `mysessionid` into `sessionid.txt`
-
 Happy Scaping! (´・ω・｀)∫
 ## Demo Video
 <img src="https://github.com/tenaibms/runescape-launch-script/blob/images/launcher.gif?raw=true" />
