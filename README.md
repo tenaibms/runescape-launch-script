@@ -21,4 +21,4 @@ you would paste `mysessionid` into `sessionid.txt`
 
 Happy Scaping! (´・ω・｀)∫
 ## Demo Video
-![](https://i.imgur.com/FpvKuoC.gif)
+<img src="https://github.com/tenaibms/runescape-launch-script/blob/images/launcher.gif?raw=true" />
