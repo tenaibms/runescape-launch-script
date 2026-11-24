@@ -24,22 +24,12 @@ Function pause ($message)
     }
 }
 
-try {
-	if (-not (Test-Path ".\sessionid.txt")) {
-	        throw "sessionid.txt not found"
-    }
-	
-	$env:JX_SESSION_ID = Get-Content -Path ".\sessionid.txt"
-} catch {
-	pause("You need to create a file called sessionid.txt and paste your session id into it. See the readme ( ^._.^)")
-	exit
-}
-
 Get-ChildItem -Path ".\OSRS" -Filter *.properties -File | ForEach-Object {
     $config = Get-Content $_.FullName -Raw | ConvertFrom-StringData
 
     $env:JX_CHARACTER_ID = $config.JX_CHARACTER_ID
     $env:JX_DISPLAY_NAME = $config.JX_DISPLAY_NAME
+	$env:JX_SESSION_ID = $config.JX_SESSION_ID
 	
 	try {
 		cmd.exe /c start $runelite_path
@@ -58,6 +48,7 @@ Get-ChildItem -Path ".\RS3" -Filter *.properties -File | ForEach-Object {
 
     $env:JX_CHARACTER_ID = $config.JX_CHARACTER_ID
     $env:JX_DISPLAY_NAME = $config.JX_DISPLAY_NAME
+	$env:JX_SESSION_ID = $config.JX_SESSION_ID
 	
 	try {
 		Start-Process $rs3_path
