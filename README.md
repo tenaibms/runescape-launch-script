@@ -11,3 +11,7 @@ If you have RuneLite or RS3 installed to a non-standard directory you will need 
 Happy Scaping! (´・ω・｀)∫
 ## Demo Video
 <img src="https://github.com/tenaibms/runescape-launch-script/blob/images/launcher.gif?raw=true" />
+
+# Troubleshooting
+### It doesn't do anything even though I followed the setup guide correctly!
+External Powershell scripts may be blocked on your system. Open a powershell window in administrator mode and type `Set-ExecutionPolicy RemoteSigned`, then launching the script again again. This will allow signed scripts from remote sources and unsigned scripts locally.
